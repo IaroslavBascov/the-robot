@@ -1,0 +1,272 @@
+body {
+  font-size: 20px;
+  margin: 0px;
+  font-family: Monospace !important;
+}
+
+
+.hdr {
+  z-index: 10;
+  display: inline-flex;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #C09C30;
+}
+
+.logo {
+  z-index: 11;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: inline-flex;
+  height: 40px;
+  width: 40px;
+}
+a .name{
+text-decoration: none;
+} 
+.name {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 35px !important;
+  display: inline-flex;
+}
+
+.v2 {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 35px;
+}
+.sm{
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-size: 20px !important;
+}
+
+.name:not(.v2)::after {
+  content: "SCARABAEUS";
+}
+
+.cont {
+  z-index: 11;
+  margin-left: auto;
+  display: inline-flex;
+}
+
+.tab a {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  text-transform: lowercase;
+  color: black !important;
+  text-decoration: none !important;
+}
+
+.tab {
+  z-index: 11;
+  display: inline-flex;
+}
+
+.act {
+  z-index: 11;
+  background-color: white;
+}
+
+.tab:last-of-type {
+  margin-right: 10px;
+}
+
+.base {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.model {
+  width: 100%;
+  height: 600px ;
+  border: 1px solid #C09C30;
+}
+
+.conm {
+  cursor: pointer !important;
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+button {
+  font-family: monospace;
+  cursor: pointer;
+  border-radius: 0px;
+  padding: 10px;
+  background-color: #C09C30;
+  border: 0px;
+  text-transform: lowercase;
+  display: inline-flex;
+  margin-left: -4px;
+  font-size: 20px;
+}
+
+button:focus {
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: #ffcf40;
+}
+
+.content{
+  transition: 500ms;
+  margin-top: 10px;
+  color:#ffcf40;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  z-index: -1;
+  display:inline-flex !important;
+  align-items:flex-end;
+  box-shadow: inset 0px -550px 100px -400px black;
+}
+a .content:hover{
+  transition: 500ms;
+  box-shadow: inset 0px -50px 100px 100px black;
+}
+a .content{
+  color:#ffcf40 !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #C09C30;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.text{
+  display: inline-flex;
+  height: 150px;
+  align-items:center;
+  width:50%;
+  margin: 0px;
+}
+.table{
+  margin-left: auto;
+  margin-right: auto;
+  width:80%;
+  padding-bottom: 50%;
+  position:relative;
+  background-size: cover;
+  background-position: center;
+}
+.si{
+  width: 20%;
+  display:inline-flex;
+  align-content: center;
+  height: 25%;
+  color:#C09C30;
+  align-items: center;
+  justify-content: center;
+  background-color: #0000009a;
+}
+.c2{
+  width: 40%;
+}
+.c3{
+  width: 60%;
+}
+.but{
+  cursor:pointer;
+}
+.but:hover{
+  background-color: #000000cc;
+}
+.tablin{
+  left: 10px;
+  position: absolute;
+  width:100%;
+  height: 100%;
+}
+.hiddp{
+  overflow: auto;
+  display: none;
+  width:calc(100% - 58px);
+  height:calc(100% - 58px);
+  background-color:#ffffff;
+  color:black;
+  border: #C09C30 1px solid;
+  position:fixed;
+  top:9px;
+  left:9px;
+  cursor: default !important;
+  z-index: 12;
+  padding: 20px;
+  align-content: center;
+}
+.but:focus .hiddp{
+  display:inline-flex;
+}
+.cls{
+  display: none;
+  cursor: pointer;
+  background-color:#dc0000;
+  color: #ffffff;
+  padding-bottom: 5px;
+  text-align: center;
+  position:fixed;
+  top:9px;
+  right:8px;
+  width:40px;
+  height:20px;
+  z-index: 13;
+}
+.hiddp img{
+  display:inline-block;
+  max-width:calc(70% - 40px);
+  max-height: calc(100% - 60px);
+  border: #C09C30 1px solid;
+  box-sizing: border-box;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.hiddp .text{
+  height: fit-content;
+  padding:20px;
+  display:block;
+  align-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.but:focus + .cls{
+  display: block;
+
+}
+ul li::before {
+  content: "\2022";
+  color:#C09C30;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+.tablin{
+  font-size: 0px;
+}
+.tablin *{
+  font-size: 20px;
+}
